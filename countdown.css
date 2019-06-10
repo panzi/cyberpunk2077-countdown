@@ -4,6 +4,7 @@ body, html {
 	width: 100vw;
 	height: 100vh;
 	font-size: 5vh;
+	font-size: 5vmax;
 }
 
 .bg_layer {
@@ -98,18 +99,22 @@ body {
 @keyframes countdown_blur {
 	0% {
 		text-shadow: 0.1vh 0.1vh 0.5vh rgba(21, 242, 203, 0.5);
+		text-shadow: 0.1vmax 0.1vmax 0.5vmax rgba(21, 242, 203, 0.5);
 	}
 
 	96% {
 		text-shadow: 0.1vh 0.1vh 0.5vh rgba(21, 242, 203, 0.5);
+		text-shadow: 0.1vmax 0.1vmax 0.5vmax rgba(21, 242, 203, 0.5);
 	}
 
 	98% {
 		text-shadow: -0.1vh 0vh 2vh rgba(21, 242, 203, 0.5);
+		text-shadow: -0.1vmax 0vmax 2vmax rgba(21, 242, 203, 0.5);
 	}
 
 	100% {
 		text-shadow: 0.1vh 0.1vh 0.5vh rgba(21, 242, 203, 0.5);
+		text-shadow: 0.1vmax 0.1vmax 0.5vmax rgba(21, 242, 203, 0.5);
 	}
 }
 
