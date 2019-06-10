@@ -8,7 +8,7 @@ body, html {
 
 .bg_layer {
 	object-fit: cover;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	bottom: 0;
@@ -37,7 +37,7 @@ body {
 	line-height: 1rem;
 	height: 1rem;
 	font-weight: bold;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -47,6 +47,14 @@ body {
 	min-height: 1em;
 	user-select: none;
 	pointer-events: none;
+
+	animation-name: countdown_blur;
+	animation-iteration-count: infinite;
+	animation-duration: 21s;
+}
+
+:fullscreen {
+	cursor: none;
 }
 
 @keyframes countdown_fault {
@@ -87,6 +95,23 @@ body {
 	}
 }
 
+@keyframes countdown_blur {
+	0% {
+		text-shadow: 0.1vh 0.1vh 0.5vh rgba(21, 242, 203, 0.5);
+	}
+
+	96% {
+		text-shadow: 0.1vh 0.1vh 0.5vh rgba(21, 242, 203, 0.5);
+	}
+
+	98% {
+		text-shadow: -0.1vh 0vh 2vh rgba(21, 242, 203, 0.5);
+	}
+
+	100% {
+		text-shadow: 0.1vh 0.1vh 0.5vh rgba(21, 242, 203, 0.5);
+	}
+}
 
 .countdown_effect {
 	height: 0.2rem;

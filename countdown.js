@@ -90,3 +90,11 @@ function init() {
 
 	countdown_timer = setInterval(update, 1000);
 }
+
+function toggleFullScreen() {
+	if (!document.fullscreenElement) {
+		document.documentElement.requestFullscreen();
+	} else if (document.exitFullscreen) {
+		document.exitFullscreen();
+	}
+}
