@@ -23,14 +23,10 @@ function lpad(str, len, char) {
 }
 
 function init() {
-	var bgs = [];
+	var bgs = Array.prototype.slice.call(document.getElementsByClassName("bg_layer"));
 
-	for (var i = 0; i < 10; ++ i) {
-		var bg = document.getElementById('bg' + (i + 1));
-		if (i > 0) {
-			bg.style.display = "none";
-		}
-		bgs.push(bg);
+	for (var i = 1; i < bgs.length; ++ i) {
+		bgs[i].style.display = "none";
 	}
 
 	var bg_timer = setInterval(function () {
