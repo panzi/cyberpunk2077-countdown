@@ -1,4 +1,4 @@
-var RELEASE_DATE = Date.parse("2020-09-17 00:00:00");
+var RELEASE_DATE = Date.parse("2020-11-19 00:00:00");
 
 if (!Date.parse) {
 	Date.parse = function (str) {
